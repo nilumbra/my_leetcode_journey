@@ -2,7 +2,7 @@
 ## Activity log: to a full-year algorithmic trip in Leetcode 
 ### 2022
 ### 21st March - 27th March 
-As a convenient educational accompaniment for 6.006's dynamic programming chapter, the focused was DP problems on leetcode. Did several, all are archived under the DP folder. Hopefully, I won't forget about the black magic too quickly. 
+To consolidate inputs coming from 6.006 lectures and recitations on dynamic programming, most problems solved this week fell under the DP hood, and most of them are archived under the DP folder. I had a lot of troubles seeing the subproblems/optimal substructures, but now having coded these problems, of same pattern repeatedly, hopefully I won't forget about the black magic too quickly. 
 
 TODO  
 - [x] Sort solutions into folders by category
