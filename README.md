@@ -6,7 +6,7 @@ To consolidate inputs coming from 6.006 lectures and recitations on dynamic prog
 
 ## Analysis
 
-#### Max Island
+#### Max Area of Island
 Isn't this a slightly revised version of floodfill repeated several times?
 
 ## TODO  
