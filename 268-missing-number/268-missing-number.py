@@ -4,10 +4,8 @@ class Solution(object):
         :type nums: List[int]
         :rtype: int
         """
-        s = 0
-        for i in range(len(nums) + 1):
-            s += i
-            
+        s = len(nums) * (len(nums) + 1) / 2
+        
         for num in nums:
             s -= num
 
