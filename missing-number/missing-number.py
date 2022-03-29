@@ -4,9 +4,10 @@ class Solution(object):
         :type nums: List[int]
         :rtype: int
         """
-        table = {i for i in range(len(nums)+1)}
+        s = len(nums) * (len(nums) + 1) / 2
+        
         for num in nums:
-            table.remove(num)
+            s -= num
 
-        return table.pop()
+        return s
 
