@@ -9,11 +9,11 @@ class Solution:
         if len(grid) == 1 and grid[0][0] == 0: return 1
         
         def get_valid_neighbors(i, j):
+            for x, y in dir_8(i, j):
+                if 0 <= x < h and 0 <= y < w and grid[x][y] == 0:
+                    yield (x, y)
             # print("neighbors:", [(x, y) for x, y in dir_8(i, j) if 0 <= x < h and 0 <= y < w and grid[x][y] == 0])
-            return [(x, y) for x, y in dir_8(i, j) if 0 <= x < h and 0 <= y < w and grid[x][y] == 0]
-    
-        
-        
+            # return [(x, y) for x, y in dir_8(i, j) ]    
         
         frontier = deque() # cells that have been discovered but not visited
         discovered = set()
