@@ -1,9 +1,9 @@
 # my_leetcode_journey
 ## Activity log: to a full-year algorithmic trip in Leetcode 
-04/04  Implement get_neighors(i, j) using JS and Python generator for BFS algorithms in 2D matrix(e.g. 01 Matrix). This should cut memory usage down for a bit \
-0403   Figure out a way to optimize space complexity from O(n) to O(1) for the '101' and '010' problem(select building) by drawing a dependency graph. And write the explanation to the problem's discussion panel \
-0402   Attend Weekly contest for the first time. Solve only 1 out of 4 \
-0325   Start using Chrome Extension Leethub to automate uploading leetcode submission to Github \
+04/04 &nbsp;&nbsp; Implement get_neighors(i, j) using JS and Python generator for BFS algorithms in 2D matrix(e.g. 01 Matrix). This should cut memory usage down for a bit \
+04/03 &nbsp;&nbsp; Figure out a way to optimize space complexity from O(n) to O(1) for the '101' and '010' problem(select building) by drawing a dependency graph. And write the explanation to the problem's discussion panel \
+04/02 &nbsp;&nbsp; Attend Weekly contest for the first time. Solve only 1 out of 4 \
+03/25 &nbsp;&nbsp; Start using Chrome Extension Leethub to automate uploading leetcode submission to Github \
 
 ## Weekly Summary
 ### 2022
