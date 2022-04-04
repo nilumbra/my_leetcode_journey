@@ -21,7 +21,7 @@ var allPathsSourceTarget = function(graph) {
             visited[cur]++;
         }
 
-        if (!graph[cur][visited[cur]] && graph[cur].length == visited[cur]) { // has visited all outcoming edes from the cur_node
+        if (!graph[cur][visited[cur]] ) { // the cur node does not have an outgoing edges at all && has visited all outcoming edes from the cur_node 
             if (cur == graph.length - 1) {
                 // console.log(stack)
                 ans.push(Array.from(stack))
