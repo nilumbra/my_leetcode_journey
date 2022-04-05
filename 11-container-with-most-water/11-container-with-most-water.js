@@ -3,22 +3,12 @@
  * @return {number}
  */
 var maxArea = function(height) {
+    var m = -Infinity;
     
-    let left = 0,
-        right = height.length - 1,
-        waterContained = (height, l, r) => Math.min(height[l], height[r]) * (r - l),
-        maxArea = waterContained(height, left, right);
-    
-    
-    while (left < right) {
-        if (height[left] < height[right]) {
-            left++;
-        } else {
-            right--;
-        }
-        
-        let area = waterContained(height, left, right);
-        maxArea = area > maxArea ? area: maxArea;
+    for (let l = 0, r = height.length - 1; l < r;) {
+        m = Math.max(Math.min(height[l], height[r]) * (r - l), m);
+        height[l] < height[r] ? l++: r--;
     }
-    return maxArea
+    
+    return m
 };
