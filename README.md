@@ -9,7 +9,7 @@
 ## Weekly Summary
 ### 2022
 
-### 3/28 - 4/4
+### 3/28 - 4/4 : **BFS**|**DFS**
 This is a BFS and DFS week. Did over 20 problems on BFS and DFS. A significant part of the problems are based on a similar setting of a 2D 01-matrix and the definition of a water cell(0) and landcell(1). Several notes on key ideas to solve this type of problem and coding technique involved: \
  - For painting/finding a connected set of cell of the same type, *usually both BFS and DFS works*. 
  - For path finding, or shortest path in particular, just do **BFS**. It's **dummy-proof**.
@@ -18,7 +18,7 @@ This is a BFS and DFS week. Did over 20 problems on BFS and DFS. A significant p
  - Otherwise, for both algorithms, maintaining a `seen` or `visited` set object is usually necessary to prevent the program falls into an infinite loop/recursion. 
  - `getValidNeighbors(i, j)` is needed in almost every island/matrix problem, which can be implemented by defining a generator in both Python and Javascript.
 
-### 3/21 - 3/27
+### 3/21 - 3/27 : **DP**
 To consolidate inputs coming from 6.006 lectures and recitations on dynamic programming, most problems solved this week fell under the DP hood, and most of them are archived under the DP folder. I had a lot of troubles seeing the subproblems/optimal substructures, but now having coded these problems, of same pattern repeatedly, hopefully I won't forget about the black magic too quickly. 
 
 ## Analysis
