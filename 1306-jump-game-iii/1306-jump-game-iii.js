@@ -4,20 +4,12 @@
  * @return {boolean}
  */
 var canReach = function(arr, start) {
-    
-    const seen = new Set()
-    
-    function dfs(i) {
-        seen.add(i)
-        var subtreeContains0 = false;
-        for (const nei of [i + arr[i], i - arr[i]]) {
-            if (arr[nei] == 0) return true
-            if (nei >= 0 && nei < arr.length && !seen.has(nei)) {
-                subtreeContains0 |= dfs(nei);
-            }
-        }
-        return subtreeContains0
+    if (start >= 0 && start < arr.length && arr[start] >= 0) {
+        if (arr[start] == 0) return true
+        
+        arr[start] = -arr[start]
+        return canReach(arr, start + arr[start]) || canReach(arr, start - arr[start])
+        
     }
-    
-    return dfs(start)
+    return false
 };
