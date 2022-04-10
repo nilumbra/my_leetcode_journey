@@ -1,4 +1,3 @@
-from collections import defaultdict
 class Solution(object):
     def findSmallestSetOfVertices(self, n, edges):
         """
@@ -7,15 +6,11 @@ class Solution(object):
         :rtype: List[int]
         """
         
-        parent = {}
+        unreachable_nodes = set(list(range(n)))
         for tail, head in edges:
-            parent[head] = tail
+            if head in unreachable_nodes:
+                unreachable_nodes.remove(head)    
         
-        nonreachable = []
-        for i in range(n):
-            if i not in parent: 
-                nonreachable.append(i)
-                
-        return nonreachable
+        return list(unreachable_nodes)
             
         
