@@ -1,5 +1,6 @@
 # my_leetcode_journey
 ## Activity log: to a full-year algorithmic trip in Leetcode 
+04/12 Almost finished Graph Theory Study Plan I. One lesson: use BFS || Dynamic programming 
 04/05 Remember: `[iterable].forEach` in Javascript modifies the iterable inplace and RETURNS undefined \
 04/04 &nbsp;&nbsp; Implement get_neighors(i, j) using JS and Python generator for BFS algorithms in 2D matrix(e.g. 01 Matrix). This should cut memory usage down for a bit \
 04/03 &nbsp;&nbsp; Figure out a way to optimize space complexity from O(n) to O(1) for the '101' and '010' problem(select building) by drawing a dependency graph. And write the explanation to the problem's discussion panel \
