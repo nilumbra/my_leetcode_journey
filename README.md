@@ -1,10 +1,18 @@
 # my_leetcode_journey
 ## Activity log: to a full-year algorithmic trip in Leetcode 
+04/14 Just realized there's this build-in function `divmod(divident, divisor)` in Python. Super handy for getting every digit of an integer, by ```while n > 0:
+    n, digit = divmod(n, 10)```
+    
 04/12 Almost finished Graph Theory Study Plan I. One lesson: use BFS || Dynamic programming 
-04/05 Remember: `[iterable].forEach` in Javascript modifies the iterable inplace and RETURNS undefined \
-04/04 &nbsp;&nbsp; Implement get_neighors(i, j) using JS and Python generator for BFS algorithms in 2D matrix(e.g. 01 Matrix). This should cut memory usage down for a bit \
-04/03 &nbsp;&nbsp; Figure out a way to optimize space complexity from O(n) to O(1) for the '101' and '010' problem(select building) by drawing a dependency graph. And write the explanation to the problem's discussion panel \
-04/02 &nbsp;&nbsp; Attend Weekly contest for the first time. Solve only 1 out of 4 \
+
+04/05 Remember: `[iterable].forEach` in Javascript modifies the iterable inplace and RETURNS undefined 
+
+04/04 &nbsp;&nbsp; Implement get_neighors(i, j) using JS and Python generator for BFS algorithms in 2D matrix(e.g. 01 Matrix). This should cut memory usage down for a bit 
+
+04/03 &nbsp;&nbsp; Figure out a way to optimize space complexity from O(n) to O(1) for the '101' and '010' problem(select building) by drawing a dependency graph. And write the explanation to the problem's discussion panel 
+
+04/02 &nbsp;&nbsp; Attend Weekly contest for the first time. Solve only 1 out of 4 
+
 03/25 &nbsp;&nbsp; Start using Chrome Extension Leethub to automate uploading leetcode submission to Github 
 
 ## Weekly Summary
