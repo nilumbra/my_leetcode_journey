@@ -8,11 +8,9 @@ var checkStraightLine = function(coordinates) {
     const k = (p2, p1) => (p2[1] - p1[1]) / (p2[0] - p1[0]),
           slope = k(coordinates[1], coordinates[0]);
     // console.log(hor_ver)
-    var last_p = coordinates[1];
-    for (const p of coordinates.slice(2)) {
+    for (let i = 2; i < coordinates.length; i++) {
         // console.log(`${last_p}, ${p}, ${diff2d(last_p, p)}, ${fixed}`)
-        if (k(p, last_p) != slope) return false
-        last_p = p
+        if (k(coordinates[i], coordinates[i-1]) != slope) return false
     }
     return true
 };
