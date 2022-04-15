@@ -7,7 +7,6 @@ var checkStraightLine = function(coordinates) {
     console.log(coordinates)
     const k = (p2, p1) => (p2[1] - p1[1]) / (p2[0] - p1[0]),
           slope = k(coordinates[1], coordinates[0]);
-
     // console.log(hor_ver)
     var last_p = coordinates[1];
     for (const p of coordinates.slice(2)) {
