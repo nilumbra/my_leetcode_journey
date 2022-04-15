@@ -11,19 +11,12 @@
  */
 
 function middleNode(head: ListNode | null): ListNode | null {
-    var count: number = 1, 
-        ptr: ListNode = null,
-        mid: ListNode = null,
-        alt: boolean = true;
-    
-    ptr = head,
-    mid = head;
+    var ptr: ListNode = head,
+        mid: ListNode = head;
 
-    while (ptr.next) {
-        if (alt) mid = mid.next //((Math.floor(count / 2) + 1) ^ count) & 1
-        alt = !alt
-        ptr = ptr.next
-        count++;
+    while (ptr && ptr.next) {
+        ptr = ptr.next.next
+        mid = mid.next
     }
         
     return mid
