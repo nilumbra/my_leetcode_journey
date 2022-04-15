@@ -11,7 +11,6 @@
  */
 
 function middleNode(head: ListNode | null): ListNode | null {
-    // if (head.next == undefined) return head
     var count: number = 1, 
         ptr: ListNode = null,
         mid: ListNode = null,
