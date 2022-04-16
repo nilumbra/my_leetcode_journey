@@ -1,5 +1,7 @@
 # my_leetcode_journey
 ## Activity log: to a full-year algorithmic trip in Leetcode 
+04/14 Solved two topological sort problems: Course Schdule I, II. Classy classical problems brought up in 6.006 recitation as well. At the end of day(almost), participated in AtCoder Beginner Contest 248. Only solved 3 problems, got stuck on the 3rd problem so long which turns out to be another basic DP problem. Gigantic failure... 
+
 04/14 Just realized there's this build-in function `divmod(divident, divisor)` in Python. Super handy for getting every digit of an integer, by ```while n > 0:
     n, digit = divmod(n, 10)```
     
@@ -17,6 +19,8 @@
 
 ## Weekly Summary
 ### 2022
+### 4/5 - 4/17
+Feel like getting stuck in the depths of muddy graph algorithms... After 'finishing' (quotation mark because I didn't solve the last 5 problems on my own) the Graph Theory Study Plan I, I did not seem to have improvement in my coding skills at all. All intuitions and practical muscles I acquired is limited to handling basic graph-ish problems with DFS/BFS. There are so many topics left to pick up or get a review on: A*, Shortest Path, Maximaxpaium Flow, Minimum Cut, Minimum Spanning tree... Last note, after finishing this round of Study Plan(up to around April 25th), I need to focus on preparing for coding tests from LINE and other companies, so I am deciding to shift to AtCoder for a while, maybe until June, during the period I will be doing very few leetcode problems. And instead of uploading Leetcode submissions, I will uploading those from AtCoder.
 
 ### 3/28 - 4/4 : **BFS**|**DFS**
 This is a BFS and DFS week. Did over 20 problems on BFS and DFS. A significant part of the problems are based on a similar setting of a 2D 01-matrix and the definition of a water cell(0) and landcell(1). Several notes on key ideas to solve this type of problem and coding technique involved: \
