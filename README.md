@@ -41,35 +41,59 @@ Isn't this a slightly revised version of floodfill repeated several times?
 ## Concepts Checklist
 ### Basics
 ★★★ **DFS**
+ 
 ★★★ **BFS** 
+
 ★☆☆ **BackTracking**
+
 ★☆☆ **Binary Search**
+
 ★★☆ **Two pointers**
+
 ★☆☆ Fast and slow pointers
+
 ★☆☆ (Thinking from Reverse Order)
+
 
 ### Advanced
 ★☆☆ **Topological sort**
+
 ☆☆☆ Greedy: e.g. Huffman coding
+
 ☆☆☆ Divide and Conquer
+
 ☆☆☆ UnionFind
+
 ★★★ Cycle detection in undirected graph
+
 ★★☆ Cycle detection in directed graph
+
 ☆☆☆ Find SCC in directed Graph
+
 ☆☆☆ Lowest Common Ancestor 
     * [Lowest Common Ancestor of a Binary Tree - LeetCode](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/)[Lowest Common Ancestor Binary Tree - YouTube](https://www.youtube.com/watch?v=13m9ZCB8gjw&list=RDCMUCZLJf_R2sWyUtXSKiKlyvAw&index=8&frags=pl%2Cwn)
+
 ★☆☆ Dijkstra: single source shortest path, O(nlogn + m )
+
 ★☆☆ Bellman-Floyd: single source with negative weights, O(mn)
+
 ☆☆☆ Floyd-Warshall: all pairs shortest path; O(n^3)
+
 ☆☆☆ Reservoir Sampling
+
 ☆☆☆ KMP [Implement strStr() - LeetCode](https://leetcode.com/problems/implement-strstr/)
 ☆☆☆ *Manacher*
+
 ☆☆☆ *Morris*
+
 
 ### Ultimate
 ☆☆☆ *Minimum Spanning Tree: Prim’s, Kruskal*
+
 ☆☆☆ *minimum s-t cut: Ford-Fulkerson*
+
 ☆☆☆ *global min cut: Karger’s, Karger Stein*
+
 
 ## TODO  
 - [x] Sort solutions into folders by category
