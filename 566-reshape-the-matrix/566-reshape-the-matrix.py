@@ -8,8 +8,7 @@ class Solution:
         flat = [c for row in mat for c in row]
         
         for rnum in range(r):
-            for cnum in range(c):
-                
+            for cnum in range(c): 
                 new_matrix[rnum][cnum] = flat[rnum*c + cnum]
                 
         return new_matrix
