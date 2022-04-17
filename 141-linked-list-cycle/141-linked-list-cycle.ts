@@ -16,12 +16,10 @@ function hasCycle(head: ListNode | null): boolean {
 
     if (head == null) return false
     
-    while (fast.next != null && fast.next.next != null) { 
-        fast = fast.next.next
-        slow = slow.next
-        if (fast == slow) {
-            return true
-        }
+    while (fast.next && fast.next.next) { 
+        fast = fast.next.next;
+        slow = slow.next;
+        if (fast == slow) return true
     }
     
     return false
