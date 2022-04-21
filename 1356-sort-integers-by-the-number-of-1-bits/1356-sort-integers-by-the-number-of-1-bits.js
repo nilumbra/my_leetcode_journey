@@ -10,7 +10,6 @@ var sortByBits = function(arr) {
             if (num & 1) count++;
             num >>= 1
         }
-        
         return count
     }
     
