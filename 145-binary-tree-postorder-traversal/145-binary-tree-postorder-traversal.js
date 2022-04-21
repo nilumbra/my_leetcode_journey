@@ -11,9 +11,16 @@
  * @return {number[]}
  */
 var postorderTraversal = function(root) {
-    if (root) {
-        return [...postorderTraversal(root.left), ...postorderTraversal(root.right), root.val]
-    } else {
-        return []
+    const out = [];
+    
+    function recurse(root) {
+        if (root) { 
+            recurse(root.left)
+            recurse(root.right)
+            out.push(root.val)
+        }    
     }
+    
+    recurse(root)
+    return out
 };
