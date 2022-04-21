@@ -14,9 +14,15 @@ var letterCasePermutation = function(s) {
         }
         
         for (let i = first; i < s.length; i++) {
-            upper_lower_variations(s[i]).forEach(c => {
-                backtrack(i + 1, curr + c)
-            })
+            const lCase = s[i].toLowerCase(),
+                  uCase = s[i].toUpperCase();
+            
+            if (lCase == uCase) {
+                backtrack(i + 1, curr + s[i])
+            } else {
+                backtrack(i + 1, curr + lCase)
+                backtrack(i + 1, curr + uCase)
+            }
         }
     }
     
