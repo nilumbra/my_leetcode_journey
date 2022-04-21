@@ -39,19 +39,27 @@ To consolidate inputs coming from 6.006 lectures and recitations on dynamic prog
 Isn't this a slightly revised version of floodfill repeated several times?
 
 ## Concepts Checklist
+#### About ★/☆ metrics
 ★☆☆☆☆ 
 - Can implement a basic structure of this algorithm in classical examples/settings/scenarios 
 - Can remember the time complexity
+
 ★★☆☆☆ 
 - Can effectively identify the possible usefulness of this algorithm given an arbitrary setting
 - Provided with enough time, can implement the algorithm to solve a problem given such setting 
+
+
 ★★★☆☆
 - Can implement the algorithm reasonably fast
 - Can explain the algorithm well by drawing illustrations and writing pseudocode
-- Can do a correct analysis on the upperbound time & space complexity of the algorithm. 
+- Can do a correct analysis on the upperbound time & space complexity of the algorithm
+
+
 ★★★★☆
 - Can implement the algorithm really fast
 - Can do a mathematically rigorous analysis of the algorithm (eg. with combinatorics/probability/induction proof/invariants etc.) and its time & space complexity
+
+
 ★★★★★
 - Can explain the general version of this algorithm in a logcial way (worth writing a blog on it)
 - Know different implementational strategies and understand their pros/cons
