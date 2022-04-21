@@ -39,60 +39,80 @@ To consolidate inputs coming from 6.006 lectures and recitations on dynamic prog
 Isn't this a slightly revised version of floodfill repeated several times?
 
 ## Concepts Checklist
+★☆☆☆☆ 
+- Can implement a basic structure of this algorithm in classical examples/settings/scenarios 
+- Can remember the time complexity
+★★☆☆☆ 
+- Can effectively identify the possible usefulness of this algorithm given an arbitrary setting
+- Provided with enough time, can implement the algorithm to solve a problem given such setting 
+★★★☆☆
+- Can implement the algorithm reasonably fast
+- Can explain the algorithm well by drawing illustrations and writing pseudocode
+- Can do a correct analysis on the upperbound time & space complexity of the algorithm. 
+★★★★☆
+- Can implement the algorithm really fast
+- Can do a mathematically rigorous analysis of the algorithm (eg. with combinatorics/probability/induction proof/invariants etc.) and its time & space complexity
+★★★★★
+- Can explain the general version of this algorithm in a logcial way (worth writing a blog on it)
+- Know different implementational strategies and understand their pros/cons
+
+### Data Structures
+
+### Algorithms
 ### Basics
-★★★ **DFS**
+★★★☆☆ **DFS**
  
-★★★ **BFS** 
+★★★☆☆ **BFS** 
 
-★☆☆ **BackTracking**
+★☆☆☆☆ **BackTracking**
 
-★☆☆ **Binary Search**
+★☆☆☆☆ **Binary Search**
 
-★★☆ **Two pointers**
+★★☆☆☆ **Two pointers**
 
-★☆☆ Fast and slow pointers
+★☆☆☆☆ Fast and slow pointers 
 
-★☆☆ (Thinking from Reverse Order)
+★☆☆☆☆ (Thinking from Reverse Order)
 
 
 ### Advanced
-★☆☆ **Topological sort**
+★☆☆☆☆ **Topological sort**
 
-☆☆☆ Greedy: e.g. Huffman coding
+☆☆☆☆☆ Greedy: e.g. Huffman coding
 
-☆☆☆ Divide and Conquer
+☆☆☆☆☆ Divide and Conquer
 
-☆☆☆ UnionFind
+☆☆☆☆☆ UnionFind
 
-★★★ Cycle detection in undirected graph
+★★★☆☆ Cycle detection in undirected graph
 
-★★☆ Cycle detection in directed graph
+★★☆☆☆ Cycle detection in directed graph
 
-☆☆☆ Find SCC in directed Graph
+☆☆☆☆☆ Find SCC in directed Graph
 
-☆☆☆ Lowest Common Ancestor 
+☆☆☆☆☆ Lowest Common Ancestor 
     * [Lowest Common Ancestor of a Binary Tree - LeetCode](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/)[Lowest Common Ancestor Binary Tree - YouTube](https://www.youtube.com/watch?v=13m9ZCB8gjw&list=RDCMUCZLJf_R2sWyUtXSKiKlyvAw&index=8&frags=pl%2Cwn)
 
-★☆☆ Dijkstra: single source shortest path, O(nlogn + m )
+★☆☆☆☆ Dijkstra: single source shortest path, O(nlogn + m )
 
-★☆☆ Bellman-Floyd: single source with negative weights, O(mn)
+★☆☆☆☆ Bellman-Floyd: single source with negative weights, O(mn)
 
-☆☆☆ Floyd-Warshall: all pairs shortest path; O(n^3)
+☆☆☆☆☆ Floyd-Warshall: all pairs shortest path; O(n^3)
 
-☆☆☆ Reservoir Sampling
+☆☆☆☆☆ Reservoir Sampling
 
-☆☆☆ KMP [Implement strStr() - LeetCode](https://leetcode.com/problems/implement-strstr/)
-☆☆☆ *Manacher*
+☆☆☆☆☆ KMP [Implement strStr() - LeetCode](https://leetcode.com/problems/implement-strstr/)
+☆☆☆☆☆ *Manacher*
 
-☆☆☆ *Morris*
+★★☆☆☆ *Morris*
 
 
 ### Ultimate
-☆☆☆ *Minimum Spanning Tree: Prim’s, Kruskal*
+☆☆☆☆☆ *Minimum Spanning Tree: Prim’s, Kruskal*
 
-☆☆☆ *minimum s-t cut: Ford-Fulkerson*
+☆☆☆☆☆ *minimum s-t cut: Ford-Fulkerson*
 
-☆☆☆ *global min cut: Karger’s, Karger Stein*
+☆☆☆☆☆ *global min cut: Karger’s, Karger Stein*
 
 
 ## TODO  
