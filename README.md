@@ -39,7 +39,7 @@ To consolidate inputs coming from 6.006 lectures and recitations on dynamic prog
 Isn't this a slightly revised version of floodfill repeated several times?
 
 ## Concepts Checklist
-#### About ★/☆ metrics
+### About ★/☆ metrics
 ★☆☆☆☆ 
 - Can implement a basic structure of this algorithm in classical examples/settings/scenarios 
 - Can remember the time complexity
