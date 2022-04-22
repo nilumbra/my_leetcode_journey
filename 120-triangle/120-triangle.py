@@ -11,13 +11,7 @@ class Solution:
             triangle[i][0] += triangle[i - 1][0]
             triangle[i][-1] += triangle[i - 1][-1]
             for j in range(1, i):
-                print(i,j)
                 triangle[i][j] += min(triangle[i - 1][j - 1], triangle[i - 1][j])
-                
-        # print(triangle)
-        
-        
-        
         return min(*triangle[-1])
                 
                 
