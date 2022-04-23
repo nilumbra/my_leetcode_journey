@@ -3,5 +3,6 @@
  * @return {boolean}
  */
 var isPowerOfTwo = function(n) {
-    return n > 0 && !(n & (n - 1))
+    if (n <= 0) return 0;
+    return (n & (-n)) == n
 };
