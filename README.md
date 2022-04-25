@@ -38,35 +38,95 @@ To consolidate inputs coming from 6.006 lectures and recitations on dynamic prog
 #### Max Area of Island
 Isn't this a slightly revised version of floodfill repeated several times?
 
-## Concepts Checklist
-### About ★/☆ metrics
-★☆☆☆☆ 
-- Can implement a basic structure of this algorithm in classical examples/settings/scenarios 
-- Can remember the time complexity
-
-★★☆☆☆ 
-- Can effectively identify the possible usefulness of this algorithm given an arbitrary setting
-- Provided with enough time, can implement the algorithm to solve a problem given such setting 
-
-
-★★★☆☆
-- Can implement the algorithm reasonably fast
-- Can explain the algorithm well by drawing illustrations and writing pseudocode
-- Can do a correct analysis on the upperbound time & space complexity of the algorithm
-
-
-★★★★☆
-- Can implement the algorithm really fast
-- Can do a mathematically rigorous analysis of the algorithm (eg. with combinatorics/probability/induction proof/invariants etc.) and its time & space complexity
-
-
-★★★★★
-- Can explain the general version of this algorithm in a logcial way (worth writing a blog on it)
-- Know different implementational strategies and understand their pros/cons
-
+## Concepts Checklist[^1]
 ### Data Structures
+### Basic
+* **Array**: 
 
-### Algorithms
+> Python: list  
+> Java: ArrayList  
+> C++: std::vector  
+
+* **LinkedList**: 
+
+> Python: list or customized  
+> Java: LinkedList   
+> C++: std::list
+
+* **HashTable**: 
+
+> Python: dict(), collections.defaultdict()   
+> Java: HashMap  
+> C++: std::unordered_map  
+
+* **HashSet**
+
+> Python: set()  
+> Java: HashSet()  
+> C++: std::unordered_set  
+
+### Advanced
+* **Tree**
+* **Graph**
+* **Stack**
+
+> Python: list, deque  
+> Java: Stack  
+> C++: std::stack
+
+* **Deque**
+
+> Python: collections.deque()  
+> Java: LinkedList, ArrayDeque  
+> C++: std::deque 
+
+* **PriorityQueue** (heap)
+
+> Python: heapq, collections.PriorityQueue (thread safe)  
+> Java: PriorityQueue  
+> C++: std::priority_queue
+
+* BinarySearchTree (map)
+
+> Python: None (try to use [bisect](https://docs.python.org/3/library/bisect.html), but big O is different)  
+> Java: TreeMap  
+> C++: std::map
+
+* BinarySearchTree (set)
+
+> Python: None (try to use [bisect](https://docs.python.org/3/library/bisect.html)], but big O is different)  
+> Java: TreeSet  
+> C++: std::set
+
+* Trie: a map of key, map pairs; 
+
+> - `T = lambda: collections.defaultdict(T)`
+> - [Implement Trie (Prefix Tree) - LeetCode](https://leetcode.com/problems/implement-trie-prefix-tree/)
+
+* UnionFind
+> You can implement by yourself in an interview, here is a very concise and brilliant template (path compression has been included):
+> ```py
+> uf = {i:i for i in range(len(M))}
+> def find(p):
+>   if uf[p] != p:
+>       uf[p] = find(uf[p])
+>   return uf[p]
+>
+> def union(p1, p2):
+>   a1, a2 = find(p1), find(p2)
+>   uf[a2] = a1
+> ```
+> WARNING: this implementation has some limitation, such as you need to traverse the `uf` by calling `find` for every element with a `set` to count the number of unions, this operation is O(n) since the length of the path for every element will be no more than 2.
+> 
+>Time complexity for union find is a little bit tricky, the union and find operation will take log*n time. Please check this [wiki](https://en.wikipedia.org/wiki/Disjoint-set_data_structure) to get a better understanding.
+
+### Ultimate
+* *Red-black tree*
+* *KD-Tree*
+* *B-tree*
+* *Segment Tree*
+
+### Algorithms[^2]
 ### Basics
 ★★★☆☆ **DFS**
  
@@ -122,6 +182,19 @@ Isn't this a slightly revised version of floodfill repeated several times?
 
 ☆☆☆☆☆ *global min cut: Karger’s, Karger Stein*
 
-
-## TODO  
-- [x] Sort solutions into folders by category
+[^1]: This list is credited to xianzhez/Coding-Interview-101.
+[^2]: ★☆☆☆☆ <br> Can implement a basic structure of this algorithm in classical examples/settings/scenarios <br> 
+Can remember the time complexity <br> 
+★★☆☆☆ <br>
+Can effectively identify the possible usefulness of this algorithm given an arbitrary setting <br>
+Provided with enough time, can implement the algorithm to solve a problem given such setting <br>
+★★★☆☆ <br>
+Can implement the algorithm reasonably fast<br>
+Can explain the algorithm well by drawing illustrations and writing pseudocode<br>
+Can do a correct analysis on the upperbound time & space complexity of the algorithm<br>
+★★★★☆<br>
+Can implement the algorithm really fast<br>
+Can do a mathematically rigorous analysis of the algorithm (eg. with combinatorics/probability/induction proof/invariants etc.) and its time & space complexity<br>
+★★★★★<br>
+Can explain the general version of this algorithm in a logcial way (worth writing a blog on it)<br>
+Know different implementational strategies and understand their pros/cons<br>
