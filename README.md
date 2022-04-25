@@ -39,7 +39,7 @@ To consolidate inputs coming from 6.006 lectures and recitations on dynamic prog
 Isn't this a slightly revised version of floodfill repeated several times?
 
 ## Concepts Checklist[^1]
-### Data Structures
+## Data Structures 
 ### Basic
 * **Array**: 
 
@@ -126,7 +126,7 @@ Isn't this a slightly revised version of floodfill repeated several times?
 * *B-tree*
 * *Segment Tree*
 
-### Algorithms[^2]
+## Algorithms[^2]
 ### Basics
 ★★★☆☆ **DFS**
  
