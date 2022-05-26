@@ -4,7 +4,6 @@
  */
 var eraseOverlapIntervals = function(intervals) {
     intervals.sort((a, b) => (a[1] - b[1]));
-    console.log(intervals)
     var removeCnt = 0,
         prevLast = -Infinity;
     
