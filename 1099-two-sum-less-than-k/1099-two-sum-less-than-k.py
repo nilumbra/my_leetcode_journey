@@ -4,13 +4,12 @@ class Solution:
         nums.sort()
         ans = -1
         for i, num in enumerate(nums):
-            if num < k:
-                target = k - num
-                in_pos = bisect_left(nums, target)
-                # print(num, nums[in_pos - 1])
-                s = num + nums[in_pos - 1]
-                if s < k and in_pos - 1 != i:
-                    ans = max(s, ans)
+            if num >= k:
+                break
+            else:
+                in_pos = bisect_left(nums, k - num, i + 1) - 1
+                if in_pos > i:
+                    ans = max(num + nums[in_pos], ans)
                 
         # print(ans)
         return ans
