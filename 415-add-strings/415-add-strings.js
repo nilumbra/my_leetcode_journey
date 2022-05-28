@@ -1,13 +1,6 @@
 
 function addTwoDigits(a, b) {
-    var carry;
-    if ((a + b) >= 10) {
-        carry = 1;
-    } else {
-        carry = 0
-    }
-    
-    return [(a + b) % 10, carry];
+    return [(a + b) % 10, 0 + ((a + b) >= 10)];
 }
 /**
  * @param {string} num1
@@ -32,8 +25,6 @@ var addStrings = function(num1, num2) {
         
         
         [curr, nxt_carry] = addTwoDigits(d1, d2);
-        // console.log(curr, nxt_carry);
-        
         curr += carry;
         if (curr == 10) {
             nxt_carry = 1;
@@ -43,7 +34,6 @@ var addStrings = function(num1, num2) {
         }
         
         carry = nxt_carry;
-        // console.log(ans);
     }
     
     if (carry !== 0) {
