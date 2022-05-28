@@ -26,7 +26,7 @@ var longestPalindrome = function(s) {
         }
     }
     
-    console.log(palindromeCnt)
+    // console.log(palindromeCnt)
     palindromeCnt += (palindromeCnt < s.length);
     return palindromeCnt
 };
