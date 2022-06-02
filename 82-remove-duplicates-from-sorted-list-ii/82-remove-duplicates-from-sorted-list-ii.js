@@ -12,37 +12,33 @@
 var deleteDuplicates = function(head) {
     var u,
         uh,
-        curr,
-        prev;
+        curr;
     
-    uh = new ListNode();
-    u = uh 
+    uh = new ListNode(); // Initialize sentinel head 
+    u = uh // The 'unique' linked node list
     
-    curr = head;
-    prev = head;
+    curr = head; 
     while (curr) {
-        // console.log(curr.val)
+        
+        // Think [uh + 1: u + 1] as contains only unique nodes (eventually returning this range as the answer)
+        // Examine (u + 1)-th node and on
         if (curr.next && curr.val === curr.next.val) {
-            // console.log(`dup`)
-            // console.log(curr)
-            // console.log('--')
             let dup = curr.val;
-            
             // Terminate when curr is null or 
             // curr.val is no longer equal to dup
             while (curr) {
                 curr = curr.next;
                 if (!(curr && curr.val === dup)) {
-                    // console.log()
                     break;
                 }
             }
+            
+            // Temporarily set u.next to the first different element
+            // after the duplicate (including when u.next is undefined)
+            // This covers the edge case of trailing duplicates
             u.next = curr;
-        } else {
+        } else { // No duplication, so simply append and update the pointer
             u.next = curr;
-            // console.log("non dup")
-            // console.log(curr);
-            // console.log("--")
             u = u.next;    
             curr = curr.next;
         }
