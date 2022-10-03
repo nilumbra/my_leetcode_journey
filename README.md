@@ -1,5 +1,6 @@
 # my_leetcode_journey
-## Activity log: to a full-year algorithmic trip in Leetcode 
+## Activity log: to a full-year algorithmic journey in Leetcode 
+10/03 Reboot. Reviewing 1~2 DP problems a day.
 04/14 Solved two topological sort problems: Course Schdule I, II. Classy classical problems brought up in 6.006 recitation as well. At the end of day(almost), participated in AtCoder Beginner Contest 248. Only solved 3 problems, got stuck on the 3rd problem so long which turns out to be another basic DP problem. Gigantic failure... 
 
 04/14 Just realized there's this build-in function `divmod(divident, divisor)` in Python. Super handy for getting every digit of an integer, by ```while n > 0:
@@ -19,6 +20,10 @@
 
 ## Weekly Summary
 ### 2022
+### 10/2 - 
+#### Interesting articles on DP
+- https://segmentfault.com/a/1190000040132029/ (Covered examples: Climbing stairs, maximum subarray, longest increasing subsequence, edit distance)
+- https://github.com/ascoders/weekly/blob/master/%E5%89%8D%E6%B2%BF%E6%8A%80%E6%9C%AF/192.%E7%B2%BE%E8%AF%BB%E3%80%8ADOM%20diff%20%E6%9C%80%E9%95%BF%E4%B8%8A%E5%8D%87%E5%AD%90%E5%BA%8F%E5%88%97%E3%80%8B.md (DOM diff 最长上升子序列)
 ### 4/5 - 4/17
 Feel like getting stuck in the depths of muddy graph algorithms... After 'finishing' (quotation mark because I didn't solve the last 5 problems on my own) the Graph Theory Study Plan I, I did not seem to have improvement in my coding skills at all. All intuitions and practical muscles I acquired is limited to handling basic graph-ish problems with DFS/BFS. There are so many topics left to pick up or get a review on: A*, Shortest Path, Maximaxpaium Flow, Minimum Cut, Minimum Spanning tree... Last note, after finishing this round of Study Plan(up to around April 25th), I need to focus on preparing for coding tests from LINE and other companies, so I am deciding to shift to AtCoder for a while, maybe until June, during the period I will be doing very few leetcode problems. And instead of uploading Leetcode submissions, I will uploading those from AtCoder.
 
