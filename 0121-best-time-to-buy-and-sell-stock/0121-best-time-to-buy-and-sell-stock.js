@@ -5,17 +5,20 @@
 var maxProfit = function(prices) {
     // Observe that on the i-th day, the best strategy is to buy and sell is to buy at the lowest price and sell at the highest before i-th day. 
     // We can use two variables to store the day of a lowest buy-in and the maximum profit made so far, as we need to scan the entire <prices> to make sure our decision is optimal
-    var buy_in = 0,
-        max = -Infinity
+    var cumulative = 0,
+        m = -Infinity;
+    const diff = (beforePrice, afterPrice) => afterPrice - beforePrice;
     
-    for (const [idx, p] of prices.entries()) {
-        lowest_price = prices[buy_in]
-        if (p < lowest_price) {
-            buy_in = idx
-        } else if (p - lowest_price > max) {
-            max = p - lowest_price
-        }
+    
+    for (let i = 1; i < prices.length; ++i) {
+        let d = diff(prices[i - 1], prices[i]);
+        
+        if (d + cumulative < 0) cumulative = 0;
+        else cumulative += d;
+        
+        m = Math.max(m, cumulative);
+        // console.log(`${m}, ${cumulative}`)
     }
     
-    return Math.max(max, 0)
+    return m > 0 ? m : 0;
 };
