@@ -8,7 +8,7 @@ int min(int arr[], int size){
     return m;
 }
 
-int minimumTotal(int** triangle, int triangleSize, int* triangleColSize){
+int minimumTotal(int* triangle[], int triangleSize, int* triangleColSize){
    //int arr[] = {1,2,3,4,5};
    //printf("%d\n", max(arr ,5));
     //int end = triangleSize - 1;
