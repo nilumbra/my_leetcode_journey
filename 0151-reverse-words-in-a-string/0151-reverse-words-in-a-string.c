@@ -32,7 +32,6 @@ void getTrimIndex(char * s, int * start, int * end) {
   }
 }
 
-
 void reverse(char * s, int start, int end) {
   for(;start < end; start++, end--) 
     swap(&(s[start]), &(s[end]));    
@@ -44,32 +43,16 @@ char * reverseWords(char * s){
   getTrimIndex(s, &start, &end);
   s[end+1] = '\0';
   s = &(s[start]); 
-  printf("%s", s);
+  // printf("%s", s);
   reverse(s, 0, end - start);
   
   int i, j;
   for (i = 0, j = 0; s[j] != '\0'; j++) {
     if(s[j+1] == ' ' || s[j+1] == '\0') {
-      printf("%d, %d\n", i, j);
+      // printf("%d, %d\n", i, j);
       reverse(s, i, j); // reverse a word
       i = j + 2;
-      // printf("%s\n", s);
-//       if (s[j+1] == '\0') { // end of string processing
-//         while (s[++i] != '\0')
-//           ;
-//         s[i] = '\0';
-//         break;
-//       } else {
-
-//         while (s[j+1] == ' ')
-//           j++;
-//       }
-      
     }
   }
-//   printf("%s\n", s);
-//   printf("%c", s[j-1]);
-  
-  // printf("%c, %c", s[start], s[end]);
   return s;
 }
