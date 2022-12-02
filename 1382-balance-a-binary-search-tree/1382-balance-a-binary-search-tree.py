@@ -28,7 +28,7 @@ class Solution:
     
         # Inorder traverse BST and populate them in an array ascendingly
         def inorder_set(node: TreeNode):
-            nonlocal sortedArray
+            # nonlocal sortedArray
             if node:
                 inorder_set(node.left)
                 sortedArray.append(node)
@@ -41,7 +41,7 @@ class Solution:
         #    guarenteed to differ by less 1
         # 3. Build the two subtrees 
         def buildBalancedBST(start:int, end:int):
-            nonlocal sortedArray
+            # nonlocal sortedArray
             if start < end:
                 mid = (start+end) // 2
                 root = sortedArray[mid]
