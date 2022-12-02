@@ -4,10 +4,9 @@
 #         self.val = val
 #         self.left = left
 #         self.right = right
-
-
-
 class Solution:
+    
+    ######## 110. Balanced Binary Tree ###########
     def isBalancedBST(self, root) -> bool:
         return self.traverse(root)[1]
     
@@ -22,16 +21,12 @@ class Solution:
                 return max(lh, rh) + 1, False
         else:
             return 0, True
-    
+    ##############################################
     
     def balanceBST(self, root: TreeNode) -> TreeNode:
         sortedArray = []
-        def find_min(node:TreeNode) -> TreeNode:
-            while node.left:
-                node = node.left
-            
-            return node
-        
+    
+        # Inorder traverse BST and populate them in an array ascendingly
         def inorder_set(node: TreeNode):
             nonlocal sortedArray
             if node:
@@ -39,6 +34,12 @@ class Solution:
                 sortedArray.append(node)
                 inorder_set(node.right)
                 
+        # Divide and conquer:
+        # 1. select the mid of the original array A[mid]
+        # 2. A[start: mid - 1] is the left subtree and A[mid + 1: end] is the right subtree
+        #    This way, the resulted tree will always be balanced, as len(A[start: mid - 1]) and len(A[mid + 1: end]) is
+        #    guarenteed to differ by less 1
+        # 3. Build the two subtrees 
         def buildBalancedBST(start:int, end:int):
             nonlocal sortedArray
             if start < end:
@@ -56,21 +57,10 @@ class Solution:
             else:
                 return None
             
-            # pick mid
-            # set as root
-            # sorted_array[0: mid] 
-            # sorted_array[mid]
-#         def bstIterator(node: TreeNode):
-#             while (nxt := nextLarger(node)):
-#                 yield nxt
-#                 node = nxt
         if self.isBalancedBST(root):
             return root
         else: 
             inorder_set(root)
             return buildBalancedBST(0, len(sortedArray) - 1)
-            
-            # min_node = find_min(root)
-            # sortedArray = list(bstIterator(min_node))
         
         
