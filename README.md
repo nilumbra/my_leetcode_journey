@@ -1,5 +1,7 @@
 # my_leetcode_journey
 ## Activity log: to a full-year algorithmic journey in Leetcode 
+02/16 Implemented a pointer-based Segment Tree, adding one star to Segment Tree(-> ★☆☆☆☆)
+--2023--
 10/22 Learned Kanade's Algorithm to find the maximum subarray. And reverse it to find the minimum
 10/03 Reboot. Reviewing 1~2 DP problems a day.
 
@@ -131,7 +133,7 @@ Isn't this a slightly revised version of floodfill repeated several times?
 * *Red-black tree*
 * *KD-Tree*
 * *B-tree*
-* *Segment Tree*
+★☆☆☆☆ Segment Tree
 
 ## Algorithms[^2]
 ### Basics
