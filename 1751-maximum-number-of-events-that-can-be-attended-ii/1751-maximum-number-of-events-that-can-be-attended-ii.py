@@ -27,5 +27,5 @@ class Solution:
                           dp[i+1][attend_i] + events[j][2]
                         )
           
-      print(dp)
+      #print(dp)
       return dp[0][0]
