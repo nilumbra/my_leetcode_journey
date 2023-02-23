@@ -21,7 +21,7 @@ class Solution:
           if attend_i <= n - 1:
             attend_i = attend_i if events[attend_i][0] > end else attend_i + 1
           #print(attend_i)
-          assert attend_i <= n, f'attned_i = {attend_i}, @({i}, {j})'
+          #assert attend_i <= n, f'attned_i = {attend_i}, @({i}, {j})'
           dp[i][j] = max(
                           dp[i][j+1], # skip
                           dp[i+1][attend_i] + events[j][2]
