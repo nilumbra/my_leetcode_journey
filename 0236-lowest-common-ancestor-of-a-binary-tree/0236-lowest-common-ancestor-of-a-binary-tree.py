@@ -22,20 +22,22 @@ class Solution:
       
       def r(root):
         """
-        return 1 if find p or q
+        Report if subtree rooted at root contains 0, 1, or 2 target nodes.
+        
         """
         if not root: return 0
         
         left = r(root.left)
+        if left >= 2: return 
         right = r(root.right)
         
         curr = root == p or root == q
         #print(root.val, left + right + curr, root.val == p, root.val == q)
-        if left + right + curr == 2:
+        if left + right + curr >= 2:
           self.ans = root 
-          return 1
+          
         
-        return left+right+curr
+        return left or right or curr
         
 
       r(root)
