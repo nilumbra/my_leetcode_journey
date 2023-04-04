@@ -5,6 +5,7 @@
 --👆2023👆--
 
 10/22 Learned Kanade's Algorithm to find the maximum subarray. And reverse it to find the minimum
+
 10/03 Reboot. Reviewing 1~2 DP problems a day.
 
 04/14 Solved two topological sort problems: Course Schdule I, II. Classy classical problems brought up in 6.006 recitation as well. At the end of day(almost), participated in AtCoder Beginner Contest 248. Only solved 3 problems, got stuck on the 3rd problem so long which turns out to be another basic DP problem. Gigantic failure... 
